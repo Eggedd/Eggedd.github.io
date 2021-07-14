@@ -1,0 +1,127 @@
+
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box; 
+   font-size:20px;
+}
+
+
+
+
+/* This is a CSS comment.
+Always comment your work to explain what you're doing */ 
+body {
+font-family: arial, sans-serif;
+}
+
+/*
+background color defaults
+Note that HTML and CSS use American spelling (color not colour). */
+body {
+      background-color: orange;
+     }
+header {
+       background-color: 0;
+       }
+/* Note that if we want a number of different elements to have the same style, we just comma separate them. */
+header, footer {
+               text-align: center;
+               }
+
+/* TYPOGRAPHY*/
+h1 {
+    font-size:50px;
+    color: #fff; /* white */
+    text-transform: uppercase;
+   } 
+h2 {
+    font-size: 30px;
+    font-family: 'arial', sans-serif; 
+    text-transform: uppercase;
+	color: #FFFFFF
+   }
+h3 {
+    font-size: 30px;
+    font-family: 'Lato', ; 
+    text-transform: uppercase;
+	color: #FF9900
+   }
+p  {
+	color: #FFFFFF
+}
+h1,h2,p,h3,li {
+            padding-bottom: 1em; 
+           }
+
+
+.item {
+       background-color: 0;
+       padding:1%;
+       margin:1%; 
+       margin-bottom: 20px; 
+       margin-top: 20px; 
+       border-radius:10px;
+}
+/* let's bring the width in a little */
+/* check it out - we're responsive without even trying! */ 
+main {
+/* There's rarely any time you should set an explicit width. Always use max-width wherever possible. */
+     max-width: 1000px;
+/* Change the above to width: 1000px and see what happens with responsive */
+     margin-left: auto;
+     margin-right: auto; 
+      }
+
+/* let's talk about nesting */ 
+.item li {
+          margin-left: 25px;
+}
+blockquote {
+
+font-style: italic;
+	color: #FFFFFF
+}
+
+
+nav {
+text-align: center;
+}
+nav li {
+display: inline-block;
+}
+/* nav li a, or nav a ?? */ nav a {
+background: #ffd335; 
+color: #ff4000;
+padding: 5px; 
+text-decoration: none; 
+border-radius: 5px;
+}
+nav a:hover {
+background: orange;
+}
+body {
+background-color: black;
+background-image: url("general bg.png"); 
+background-repeat: no-repeat; 
+background-size: cover;
+}
+	
+	/* Media Query - Responsive */
+@media screen and (min-width: 500px ) { 
+body {
+background-color: #000000;
+font-family: arial; 
+}
+.item {
+background-color: rgba(0,0,0,0.80);
+} 
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
